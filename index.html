@@ -1,10 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Web Gue Keren</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTHAFAVBOY STORE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e74c3c;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 150px 0;
+        }
+        .btn-store {
+            background-color: var(--accent-color);
+            border: none;
+            padding: 12px 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-store:hover {
+            background-color: #c0392b;
+            transform: scale(1.05);
+        }
+        .product-card {
+            border: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .product-card:hover { transform: translateY(-10px); }
+    </style>
 </head>
 <body>
-    <h1>Halo Dunia!</h1>
-    <p>Ini website pertama gue di GitHub.</p>
+
+    <!-- Navigasi -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">ARTHAFAVBOY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">ARTHAFAVBOY STORE</h1>
+            <p class="lead mb-4">Temukan koleksi produk pilihan terbaik hanya di sini.</p>
+            <!-- Tombol Masuk ke Produk -->
+            <a href="#produk" class="btn btn-primary btn-store btn-lg text-white">LIHAT PRODUK SEKARANG</a>
+        </div>
+    </header>
+
+    <!-- Section Produk -->
+    <section id="produk" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Produk Unggulan</h2>
+            <div class="row g-4">
+                <!-- Produk 1 -->
+                <div class="col-md-4">
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Produk 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Jam Tangan Minimalis</h5>
+                            <p class="card-text text-muted">Kualitas premium dengan desain elegan.</p>
+                            <p class="text-primary fw-bold">Rp 250.000</p>
+                            <button class="btn btn-outline-dark btn-sm">Beli Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produk 2 -->
+                <div class="col-md-4">
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Produk 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Headphone Wireless</h5>
+                            <p class="card-text text-muted">Suara jernih dan bass yang mantap.</p>
+                            <p class="text-primary fw-bold">Rp 499.000</p>
+                            <button class="btn btn-outline-dark btn-sm">Beli Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produk 3 -->
+                <div class="col-md-4">
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Produk 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Sepatu Sport Casual</h5>
+                            <p class="card-text text-muted">Nyaman dipakai untuk aktivitas harian.</p>
+                            <p class="text-primary fw-bold">Rp 750.000</p>
+                            <button class="btn btn-outline-dark btn-sm">Beli Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 ARTHAFAVBOY STORE. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
